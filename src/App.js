@@ -1,13 +1,16 @@
 import React from "react";
 import useFetchJobs from "./useFetchJobs";
+import { Container } from "react-bootstrap";
 
 function App() {
-  const { jobs } = useFetchJobs();
+  const { jobs, loading, error } = useFetchJobs();
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
+    <Container>
+      {loading && <h1>Loading...</h1>}
+      {error && <h1>Error. Try Refreshing.</h1>}
+      <h1>{jobs.length}</h1>
+    </Container>
   );
 }
-
+// 15:00
 export default App;
