@@ -1,0 +1,17 @@
+.card {
+  border: 1px solid black;
+  margin: 10px auto;
+  width: 90%;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-title span {
+  font-weight: 400;
+  color: brown;
+}
+
+.card-title {
+  font-size: 20px;
+}
